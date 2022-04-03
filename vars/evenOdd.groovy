@@ -8,7 +8,7 @@ def call(int n)
         label 'worker'
       }
       stages{
-        sage('Even Stage')
+        stage('Even Stage')
         {
           echo "This is even number build: #"+n
           script{
