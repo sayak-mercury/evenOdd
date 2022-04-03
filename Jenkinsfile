@@ -1,1 +1,1 @@
-evenOdd(currentBuild.getNumber)
+evenOdd(currentBuild.getNumber())
