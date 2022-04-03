@@ -10,10 +10,12 @@ def call(int n)
       stages{
         stage('Even Stage')
         {
-          echo "This is even number build: #"+n
-          script{
-            log.info("INFO: This is even number build: #"+n)
-            log.info("WARNING: This is even number build: #"+n)
+          steps{
+            echo "This is even number build: #"+n
+            script{
+              log.info("INFO: This is even number build: #"+n)
+              log.info("WARNING: This is even number build: #"+n)
+            }
           }
         }
       }
